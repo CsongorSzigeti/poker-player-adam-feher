@@ -4,8 +4,8 @@ class Player:
 
     def betRequest(self, game_state):
         for datas in game_state["players"]:
-            number = datas["stack"] - datas["bet"]
             for data in datas["hole_cards"]:
+                number = data["stack"] - data["bet"]
                 if data[0]["rank"] != data[1]["rank"]:
                     return number
                 else:
