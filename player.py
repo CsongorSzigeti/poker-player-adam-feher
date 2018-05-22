@@ -7,8 +7,8 @@ class Player:
             for data in datas["hole_cards"]:
                 if data[0].values() == data[1].values():
                     return 100
-
-        return 919
+                else:
+                    return 919
 
     def showdown(self, game_state):
         pass
